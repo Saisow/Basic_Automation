@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class basiclocators {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		WebDriver driver = new ChromeDriver();
@@ -49,6 +49,18 @@ public class basiclocators {
 					
 				}
 				
+			//By using className
+		
+			//	driver.findElement(By.className("account_input")).sendKeys("sririam97@gmail.com");
+			
+			//By using linktext
+				
+				//driver.findElement(By.linkText("Blog")).click();
+				driver.findElement(By.xpath("//input[@id='search_query_top']")).sendKeys("tshirts");
+				
+				Thread.sleep(3000);
+				
+			//	driver.quit();
 				
 		
 	}
